@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#grid_wrapper_landing {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows: 80px 400px 400px 100px;
+    grid-template-areas: 
+    "he na"
+    "ar ar"
+    "s1 s1"
+    "fo fo";
+}
+
+header {
+    grid-area: he;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+nav {
+    grid-area: na;
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aqua;
+}
+
+#article_landing {
+    grid-area: ar;
+}
+
+#sec_1 {
+    grid-area: s1;
+    background-color: antiquewhite;
+}
+
+
+footer {
+    grid-area: fo;
+    background-color: gray;
+}
