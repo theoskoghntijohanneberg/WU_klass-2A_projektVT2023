@@ -8,11 +8,10 @@
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 80px 400px 400px 100px;
+    grid-template-rows: 100px 950px 100px;
     grid-template-areas: 
     "he na"
     "ar ar"
-    "s1 s1"
     "fo fo";
 }
 
@@ -20,29 +19,97 @@ header {
     grid-area: he;
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
     grid-area: na;
     display: flex;
-    height: 80px;
+    height: 100px;
     justify-content: flex-end;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(235, 234, 234);
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 200px;
+    background-color: rgb(235, 234, 234);
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -500px;
+    right: 0px;
+    transition: all 0.5s;
+}
+
+#nav-links a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.1875rem;
+    color: rgb(23, 40, 69);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#nav-links li {
+    list-style: none;
 }
 
 #article_landing {
     grid-area: ar;
+    display: flex;
 }
 
-#sec_1 {
-    grid-area: s1;
-    background-color: antiquewhite;
+#landing_img {
+    width: 100%;
+}
+
+#anmal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 700px;
+    top: 300px;
 }
 
 
 footer {
     grid-area: fo;
     background-color: gray;
+}
+
+#burger {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(54, 36, 149);
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+.burger_menu_toggle #burger_line_2 {
+    opacity: 0;
+}
+
+.burger_menu_toggle #burger_line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger_menu_toggle #burger_line_3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav_active {
+    transform: translateY(580px);
 }
