@@ -126,7 +126,7 @@ footer {
 }
 
 .nav_active {
-    transform: translateY(580px);
+    transform: translateY(600px);
 }
 
 #landing_img2 {
@@ -235,6 +235,8 @@ footer {
 
     #titel {
         font-size: 2rem;
+        position: absolute;
+        right: 600px;
     }
 
     /* Tranare */
