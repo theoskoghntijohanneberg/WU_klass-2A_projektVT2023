@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@500&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -8,11 +9,18 @@
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 390px 162px;
+    grid-template-rows: 100px 350px 180px;
     grid-template-areas: 
     "he na"
     "ar ar"
     "fo fo";
+}
+
+#logga {
+    width: 50%;
+    position: absolute;
+    right: 30px;
+    z-index: 2;
 }
 
 header {
@@ -21,13 +29,13 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid black;
 }
 
 #titel {
     font-size: 1.25rem;
     position: absolute;
-    right: 150px;
+    right: 180px;
+    font-family: 'Tillana', cursive;
 }
 
 nav {
@@ -35,9 +43,11 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid black;
+    background-color: rgb(235, 234, 234);
     z-index: 1;
+    width: 150px;
+    position: relative;
+    left: 50px;
 }
 
 #nav-links {
@@ -82,8 +92,8 @@ nav {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 200px;
-    top: 200px;
+    right: 170px;
+    top: 350px;
     border: 2px rgb(81, 81, 81);
     background-color: rgb(81, 81, 81);
     color: rgb(255, 255, 255);
@@ -102,13 +112,12 @@ footer {
 }
 
 #kontakt {
-    /* position: absolute;
-    left: 150px; */
     display: flex;
     justify-content: center;
     bottom: 1px;
     font-size: 1.25rem;
     color: rgb(146, 146, 146);
+    font-family: 'Tillana', cursive;
 }
 
 #burger {
@@ -153,60 +162,58 @@ footer {
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 1500px 162px;
+    grid-template-rows: 100px 1500px 180px;
     grid-template-areas: 
     "he na"
     "str str"
     "fo fo";
 }
 
-#text_tran1 {
+.text_tran {
     position: relative;
     left: 10px;
     margin: 10px;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
 #text_tran2 {
     position: relative;
     left: 10px;
     margin: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
 }
 
 #text_tran3 {
     position: relative;
     left: 10px;
     margin: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
 }
 
 #text_tran4 {
     position: relative;
     left: 10px;
     margin: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
 }
 
-#tran_rubrik1 {
+.tran_rubrik {
     position: absolute;
     top: 210px;
     left: 50px;
+    color: white;
+    font-family: 'Tillana', cursive;
 }
 
-#tran_rubrik2 {
-    position: absolute;
-    top: 200px;
-    left: 80px;
-}
-
-#tran_rubrik3 {
-    position: absolute;
-    top: 200px;
-    left: 50px;
-}
-
-#tran_rubrik4 {
-    position: absolute;
-    top: 200px;
-    left: 50px;
-}
 
 #tran1 {
     border: 2px solid black;
@@ -217,7 +224,7 @@ footer {
     width: 450px;
     position: absolute;
     top: 110px;
-    background-color: rgb(226, 236, 236);
+    background-color: rgb(87, 87, 87);
 }
 
 #tran2 {
@@ -229,7 +236,7 @@ footer {
     height: 250px;
     width: 450px;
     top: 500px;
-    background-color: rgb(226, 236, 236);
+    background-color: rgb(87, 87, 87);
 }
 
 #tran3 {
@@ -241,7 +248,7 @@ footer {
     flex-direction: row;
     height: 250px;
     width: 450px;
-    background-color: rgb(226, 236, 236);
+    background-color: rgb(87, 87, 87);
 }
 
 #tran4 {
@@ -253,30 +260,12 @@ footer {
     flex-direction: row;
     height: 250px;
     width: 450px;
-    background-color: rgb(226, 236, 236);
+    background-color: rgb(87, 87, 87);
 }
 
-#img_tran1 {
+.img_tran {
     width: 60%;
     height: 80%;
-    border-radius: 15px;
-}
-
-#img_tran2 {
-    width: 50%;
-    height: 70%;
-    border-radius: 15px;
-}
-
-#img_tran3 {
-    width: 50%;
-    height: 70%;
-    border-radius: 15px;
-}
-
-#img_tran4 {
-    width: 50%;
-    height: 70%;
     border-radius: 15px;
 }
 
@@ -291,7 +280,7 @@ footer {
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 0px 300px 100px 300px 250px 500px 550px 100px 400px 162px;
+    grid-template-rows: 100px 0px 300px 100px 300px 250px 500px 550px 100px 400px 180px;
     grid-template-areas: 
     "he na"
     "ot ot"
@@ -304,6 +293,10 @@ footer {
     "ht ht"
     "s2 s2"
     "fo fo";
+}
+
+.anmal_text_2 {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #sec_1_om {
@@ -321,11 +314,14 @@ footer {
     grid-area: ot;
     align-items: center;
     margin: 20px;
+    font-family: 'Tillana', cursive;
 }
 
 button {
     width: 100px;
     height: 30px;
+    font-size: 0.75rem;
+    font-family: 'Tillana', cursive;
 }
 
 #ar_om {
@@ -345,7 +341,7 @@ button {
     width: 70%;
     position: absolute;
     left: 65px;
-    top: 1200px;
+    top: 1100px;
     border: 2px solid black;
     border-radius: 10px;
     grid-area: lb;
@@ -355,7 +351,7 @@ button {
     width: 70%;
     position: absolute;
     left: 65px;
-    top: 1800px;
+    top: 1700px;
     border: 2px solid black;
     border-radius: 10px;
     grid-area: lb2;
@@ -366,14 +362,17 @@ button {
     justify-content: center;
     grid-area: lt;
     margin: 20px;
+    font-family: 'Tillana', cursive;
 }
 
 #lokal_text2 {
     position: absolute;
-    top: 900px;
+    top: 860px;
     grid-area: lt2;
-    padding: 30px;
-    margin: 10px;
+    padding: 10px;
+    margin: 20px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 0.8rem;
 }
 
 #sec_2_om {
@@ -393,6 +392,7 @@ button {
     display: flex;
     justify-content: center;
     margin: 30px;
+    font-family: 'Tillana', cursive;
 }
 
 /* Tekniker */
@@ -400,13 +400,58 @@ button {
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 350px 100px;
+    grid-template-rows: 100px 1500px 180px;
     grid-template-areas: 
     "he na"
-    "ar ar"
+    "se_ar se_ar"
     "fo fo";
 }
 
+.tek_img1 {
+    width: 60%;
+    border-radius: 200px;
+}
+
+#tek_img2 {
+    width: 52%;
+    border-radius: 200px;
+}
+
+#sec_ar {
+    grid-area: se_ar;
+}
+
+#tek_ar_1 {
+    position: absolute;
+    top: 100px;
+}
+
+#tek_ar_4 {
+    position: absolute;
+    top: 1200px;
+}
+
+
+#tek_ar_3 {
+    position: absolute;
+    top: 830px;
+}
+
+#tek_ar_2 {
+    position: absolute;
+    top: 450px;
+}
+
+.tek_rubrik {
+    display: flex;
+    justify-content: center;
+    font-family: 'Tillana', cursive;
+}
+
+.tek_text {
+    margin: 20px;
+    padding: 12px;
+}
 
 @media screen and (min-width: 600px) {
     #burger {
@@ -424,6 +469,9 @@ button {
 
     nav {
         background-color: rgb(255, 255, 255);
+        width: 100%;
+        position: absolute;
+        left: 0;
     }
 
     #nav-links {
@@ -441,6 +489,15 @@ button {
         font-size: 1.25rem;
     }
 
+    #logga {
+        width: 15%;
+        position: absolute;
+        left: 840px;
+    }
+
+    
+
+
     #grid_wrapper_landing {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px 80px 950px 0px 150px;
@@ -453,9 +510,6 @@ button {
     }
 
     #kontakt {
-        /* position: absolute;
-        top: 1135px;
-        left: 690px; */
         grid-area: ko;
     }
     
@@ -470,7 +524,7 @@ button {
     #anmal {
         position: absolute;
         right: 650px;
-        top: 300px;
+        top: 400px;
         height: 80px;
         width: 180px;
         font-size: 20px;
@@ -485,17 +539,145 @@ button {
     /* Tranare */
     #grid_wrapper_tranare {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 80px 100px;
+        grid-template-rows: 100px 1000px 162px;
         grid-template-areas: 
         "he he"
-        "na na"
+        "str str"
         "fo fo";
+    }
+
+
+    .text_tran {
+        position: relative;
+        left: 10px;
+        top: 10px;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 0.85rem;
+    }
+    
+    #text_tran2 {
+        position: relative;
+        left: 10px;
+        margin: 10px;
+        top: 10px;
+        color: rgb(0, 0, 0);
+    }
+    
+    #text_tran3 {
+        position: relative;
+        left: 10px;
+        margin: 10px;
+        top: 10px;
+        color: rgb(0, 0, 0);
+    }
+    
+    #text_tran4 {
+        position: relative;
+        left: 10px;
+        margin: 10px;
+        top: 10px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .tran_rubrik {
+        position: absolute;
+        top: 190px;
+        left: 200px;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    #tran1 {
+        border: 3px solid black;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        width: 500px;
+        position: absolute;
+        top: 270px;
+        left: 200px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    #tran2 {
+        border-radius: 10px;
+        border: 3px solid black;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        width: 500px;
+        left: 800px;
+        top: 270px;
+        background-color: white;
+    }
+    
+    #tran3 {
+        border: 3px solid black;
+        border-radius: 10px;
+        position: absolute;
+        top: 700px;
+        left: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        width: 500px;
+        background-color: white;
+    }
+    
+    #tran4 {
+        border: 3px solid black;
+        border-radius: 10px;
+        position: absolute;
+        top: 700px;
+        left: 800px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        width: 500px;
+        background-color: white;
+    }
+
+    #sec_tr_1 {
+        grid-area: str;
+        background: url(/img/background_tran.jpg);
+        background-size: 100%;
+    }
+    
+    .img_tran {
+        width: 35%;
+        height: 60%;
+        border-radius: 15px;
+    }
+    
+    #img_tran2 {
+        width: 40%;
+        height: 70%;
+        border-radius: 15px;
+    }
+    
+    #img_tran3 {
+        width: 40%;
+        height: 70%;
+        border-radius: 15px;
+    }
+    
+    #img_tran4 {
+        width: 40%;
+        height: 70%;
+        border-radius: 15px;
     }
 
     /* Om oss */
     #grid_wrapper_omoss {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 80px 300px 100px 300px 250px 100px 400px 130px;
+        grid-template-rows: 100px 80px 300px 100px 300px 250px 100px 400px 162px;
         grid-template-areas: 
         "he na"
         "ot ot"
@@ -509,9 +691,11 @@ button {
     }
 
     #hitta_img {
-        width: 25%;
+        width: 50%;
+        height: 50%;
         position: absolute;
-        left: 120px;
+        left: 400px;
+        top: 1200px;
     }
 
     #lokal_img {
@@ -523,6 +707,9 @@ button {
     #lokal_text2 {
         position: absolute;
         top: 950px;
+        padding: 50px;
+        margin: 10px;
+        font-size: 0.9rem;
     }
 
     #lokal_text {
@@ -531,11 +718,14 @@ button {
 
     #hitta_text {
         font-size: 2rem;
+        position: absolute;
+        top: 1100px;
+        left: 700px;
     }
 
     #sec_1_om {
         background-color: rgb(147, 223, 223,.5);
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
     }
 
     #lokal_img2 {
@@ -559,11 +749,64 @@ button {
         /* Tekniker */
         #grid_wrapper_teknik {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 100px 80px 100px;
+            grid-template-rows: 100px 1400px 162px;
             grid-template-areas: 
             "he he"
-            "na na"
+            "se_ar se_ar"
             "fo fo";
+        }
+        
+        .tek_img1 {
+            width: 50%;
+            border-radius: 200px;
+        }
+
+        #sec_ar {
+            grid-area: se_ar;
+        }
+
+        #tek_ar_4 {
+            position: absolute;
+            top: 1100px;
+            left: 550px;
+        }
+
+        #tek_ar_3 {
+            position: absolute;
+            top: 700px;
+            left: 150px;
+        }
+
+        #tek_ar_2 {
+            position: absolute;
+            top: 700px;
+            left: 900px;
+        }
+
+        #tek_ar_1 {
+            position: absolute;
+            top: 290px;
+            left: 500px;
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+        }
+
+        #tek_img2 {
+            width: 60%;
+            border-radius: 200px;
+        }
+
+        .tek_rubrik {
+            display: flex;
+            justify-content: center;
+            font-family: 'Tillana', cursive;
+        }
+
+        .tek_text {
+            margin: 20px;
+            padding: 12px;
+            width: 500px;
         }
 
     }
