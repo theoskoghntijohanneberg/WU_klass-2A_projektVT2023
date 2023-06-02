@@ -9,7 +9,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 350px 180px;
+    grid-template-rows: 100px 350px 300px;
     grid-template-areas: 
     "he na"
     "ar ar"
@@ -17,7 +17,7 @@
 }
 
 #logga {
-    width: 50%;
+    width: 45%;
     position: absolute;
     right: 30px;
     z-index: 2;
@@ -221,7 +221,7 @@ footer {
     justify-content: center;
     flex-direction: row;
     height: 250px;
-    width: 450px;
+    width: 400px;
     position: absolute;
     top: 110px;
     background-color: rgb(87, 87, 87);
@@ -234,7 +234,7 @@ footer {
     justify-content: center;
     flex-direction: row;
     height: 250px;
-    width: 450px;
+    width: 400px;
     top: 500px;
     background-color: rgb(87, 87, 87);
 }
@@ -247,7 +247,7 @@ footer {
     justify-content: center;
     flex-direction: row;
     height: 250px;
-    width: 450px;
+    width: 400px;
     background-color: rgb(87, 87, 87);
 }
 
@@ -259,7 +259,7 @@ footer {
     justify-content: center;
     flex-direction: row;
     height: 250px;
-    width: 450px;
+    width: 400px;
     background-color: rgb(87, 87, 87);
 }
 
@@ -371,7 +371,15 @@ button {
     grid-area: lt2;
     padding: 10px;
     margin: 20px;
-    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 0.8rem;
+}
+
+#lokal_text3 {
+    position: absolute;
+    top: 950px;
+    grid-area: lt2;
+    padding: 10px;
+    margin: 20px;
     font-size: 0.8rem;
 }
 
@@ -490,9 +498,9 @@ button {
     }
 
     #logga {
-        width: 15%;
+        width: 200px;
         position: absolute;
-        left: 840px;
+        left: 900px;
     }
 
     
@@ -550,7 +558,7 @@ button {
     .text_tran {
         position: relative;
         left: 10px;
-        top: 10px;
+        top: 35px;
         margin-top: 10px;
         color: rgb(0, 0, 0);
         font-size: 0.85rem;
@@ -560,29 +568,24 @@ button {
         position: relative;
         left: 10px;
         margin: 10px;
-        top: 10px;
+        top: 1px;
         color: rgb(0, 0, 0);
+        font-size: 0.85rem;
     }
     
     #text_tran3 {
         position: relative;
         left: 10px;
         margin: 10px;
-        top: 10px;
+        top: 1px;
         color: rgb(0, 0, 0);
+        font-size: 0.85rem;
     }
     
-    #text_tran4 {
-        position: relative;
-        left: 10px;
-        margin: 10px;
-        top: 10px;
-        color: rgb(0, 0, 0);
-    }
     
     .tran_rubrik {
         position: absolute;
-        top: 190px;
+        top: 200px;
         left: 200px;
         color: rgb(0, 0, 0);
     }
@@ -654,6 +657,8 @@ button {
         width: 35%;
         height: 60%;
         border-radius: 15px;
+        position: relative;
+        top: 10px;
     }
     
     #img_tran2 {
@@ -695,7 +700,7 @@ button {
         height: 50%;
         position: absolute;
         left: 400px;
-        top: 1200px;
+        top: 1250px;
     }
 
     #lokal_img {
@@ -706,10 +711,18 @@ button {
 
     #lokal_text2 {
         position: absolute;
-        top: 950px;
-        padding: 50px;
+        top: 830px;
+        padding: 200px;
         margin: 10px;
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+
+    #lokal_text3 {
+        position: absolute;
+        top: 900px;
+        padding: 200px;
+        margin: 10px;
+        font-size: 1rem;
     }
 
     #lokal_text {
@@ -719,7 +732,7 @@ button {
     #hitta_text {
         font-size: 2rem;
         position: absolute;
-        top: 1100px;
+        top: 1170px;
         left: 700px;
     }
 
@@ -757,39 +770,49 @@ button {
         }
         
         .tek_img1 {
-            width: 50%;
+            width: 40%;
             border-radius: 200px;
         }
 
         #sec_ar {
             grid-area: se_ar;
+            background: url(../img/teknikbakrund.jpg);
+            background-size: 100%;
         }
 
         #tek_ar_4 {
             position: absolute;
-            top: 1100px;
-            left: 550px;
+            top: 1120px;
+            left: 600px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 100px;
         }
 
         #tek_ar_3 {
             position: absolute;
             top: 700px;
-            left: 150px;
+            left: 90px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 100px;
         }
 
         #tek_ar_2 {
             position: absolute;
-            top: 700px;
+            top: 710px;
             left: 900px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 100px;
         }
 
         #tek_ar_1 {
             position: absolute;
-            top: 290px;
+            border-radius: 100px;
+            top: 250px;
             left: 500px;
             display: flex;
             justify-content: end;
             flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
         }
 
         #tek_img2 {
@@ -801,12 +824,15 @@ button {
             display: flex;
             justify-content: center;
             font-family: 'Tillana', cursive;
+            color: rgb(235, 180, 70);
         }
 
         .tek_text {
             margin: 20px;
             padding: 12px;
             width: 500px;
+            color: rgb(190, 85, 44);
+            font-family: 'Tillana', cursive;
         }
 
     }
